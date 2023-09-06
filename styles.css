@@ -1,0 +1,798 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Your other CSS styles go here */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Jost', sans-serif;
+}
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+img{
+  width: 100%;
+  display: block;
+}
+
+.font-poppins{font-family: 'Poppins', sans-serif;}
+.font-manrope{font-family: 'Manrope', sans-serif;}
+.font-jost{font-family: 'Josy'}
+
+.text-red{color: #BF0606;}
+.text-bright{color: #EFF2F9;}
+
+.bg-red { background-color: #BF0606; }
+.bg-red-dark { background-color: #650000; }
+.bg-bright { background-color: #EFF2F9; }
+.bg-dark { background-color: #393646; }
+.bg-grey { background-color: #526D82; }
+.bg-white { background-color:#FFFFFF; }
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-uppercase{text-transform: uppercase;}
+.text-lowercase{text-transform: lowercase;}
+.text-capitalize{text-transform: capitalize;}
+
+.text{
+  color: #393646;
+  opacity: 0.9;
+  margin: 2rem 0;
+  line-height: 1.6;
+}
+
+.fw-2{font-weight: 200;}
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fw-8{font-weight: 800;}
+
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-17{font-size: 17px;}
+.fs-18{font-size: 18px;}
+.fs-19{font-size: 19px;}
+.fs-20{font-size: 20px;}
+.fs-21{font-size: 21px;}
+.fs-22{font-size: 22px;}
+.fs-23{font-size: 23px;}
+.fs-24{font-size: 24px;}
+.fs-25{font-size: 25px;}
+
+.ls-1{letter-spacing: 1px;}
+.ls-2{letter-spacing: 2px;}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.btn{
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 1.4rem 1.6rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+.btn-primary{
+  background-color: #068FFF;
+  color: #FFFAF4;
+  border: 1px solid #068FFF;
+
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    color: #393646;
+    border-color:  #526D82;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: #393646;
+    border: 1px solid #526D82;
+    transition: all 300ms ease-in-out;
+}
+.btn-secondary:hover{
+    background-color: #068FFF;
+    color: #FFFAF4;
+    border-color: #068FFF;
+}
+
+.btn-group button:first-child, .btn-group a:first-child{
+    margin-right: 1rem!important;
+}
+.navbar{
+    height: 68px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 8px;
+
+}
+
+.navbar .container{
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2.5rem;
+}
+.navbar-brand-text {
+  color: #393646;
+  font-weight: 600;
+  text-decoration: none; /* Remove underline from the brand text */
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-brand-text1{
+    color: #BF0606;
+    font-weight: 600;
+}
+.navbar-brand-icon{
+    width: 40px;
+    margin-right: 4px;
+    opacity: 0.8;
+}
+.brand-and-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.menu {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.home{
+  position: absolute;
+  left: 440px;
+  top: 25px;
+  width: 185px;
+  height: 26px;
+}
+.about-us {
+position: absolute;
+left: 555px;
+top: 25px;
+width: 185px;
+height: 26px;
+}
+.contact-us {
+position: absolute;
+left: 835px;
+top: 25px;
+width: 185px;
+height: 26px;
+}
+.features-us {
+position: absolute;
+left: 695px;
+top: 25px;
+width: 185px;
+height: 26px;
+}
+
+
+
+.sign-up {
+   color: #BF0606;
+     text-align: center;
+     font: 600 18px 'Jost', sans-serif;
+     left: 1210px;
+     top: 15px;
+     background-color: transparent;
+     border-radius: 10px;
+border-style: solid;
+border-color: rgba(69, 72, 104, 0.20);
+border-width: 1px;
+width: 127px;
+height: 40px;
+position: absolute;
+   }
+
+   /* Hover state */
+   .sign-up:hover {
+     color: white;
+     background-color:#BF0606;
+   }
+
+.log-in{
+  color: white;
+  background-color:#BF0606;
+  text-align: center;
+  font: 600 18px 'Jost', sans-serif;
+    left: 1070px;
+    top: 15px;
+    border: 0px;
+    border-radius: 10px;
+width: 127px;
+height: 40px;
+position: absolute;
+}
+.log-in:hover {
+  color: #BF0606;
+  background-color:white;
+  border-radius: 10px;
+border-style: solid;
+border-color: rgba(69, 72, 104, 0.20);
+border-width: 1px;
+}
+.overview{
+ position: absolute;
+ left: 400px;
+ top: 25px;
+ width: 185px;
+ height: 26px;
+}
+.over-rec, .over-rec * {
+   box-sizing: border-box;
+   }
+.over-rec {
+  background: linear-gradient(133.49deg, rgba(191, 6, 6, 1.00) 0%,rgba(27, 25, 27, 1.00) 100%);
+   border-radius: 48px 48px 344px 48px;
+   width: 1460px;
+   height: 550px;
+   position: absolute;
+   top: 70px;
+   right:-905px;
+  }
+  .over-img, .over-img * {
+     box-sizing: border-box;
+     }
+.over-img {
+    width: 540px;
+     height: 540px;
+     position: absolute;
+     top: 50px;
+     left: 850px;
+    }
+    .over-text, .over-text * {
+     box-sizing: border-box;
+     }
+.over-text {
+     text-align: left;
+     position: absolute;
+     top: 115px;
+     left: 130px;
+     width: 713px;
+     height: 320px;
+    }
+
+.span1 {
+  font: 600 60px/90px 'Jost', sans-serif;
+}
+
+.span2 {
+   font: 600 50px/20px 'Jost', sans-serif;
+}
+
+.span3 {
+font: 550 35px/30px 'Jost', sans-serif;
+}
+.over-text1, over-text1 * {
+     box-sizing: border-box;
+     }
+.over-text1 {
+     text-align: left;
+     font: 400 18px/30px 'Jost', sans-serif;
+     position: absolute;
+     width: 700px;
+     top: 260px;
+     left: 130px;
+    }
+    .sign-up-over{
+      color: #BF0606;
+      background-color: white;
+        text-align: center;
+        font: 600 18px 'Jost', sans-serif;
+        left: -232px;
+        top: 425px;
+        border-radius: 10px;
+        width: 190px;
+        height: 62px;
+      position: absolute;
+    }
+    .sign-up-over:hover {
+      color: white;
+      background-color:transparent;
+      border-radius: 10px;
+    border-style: solid;
+    border-color:rgba(255, 255, 255, 0.20);
+    border-width: 3px;
+    }
+    .log-in-over {
+       color: white;
+         text-align: center;
+         font: 600 18px 'Jost', sans-serif;
+         left: -30px;
+         top: 425px;
+         background-color: transparent;
+         border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.20);
+    border-width: 3px;
+    width: 190px;
+    height: 62px;
+    position: absolute;
+       }
+    .log-in-over:hover{
+      color: #BF0606;
+      background-color: white;
+    }
+
+
+  .sugar-card {
+  background-color: transparent;
+  width: 360px;
+  height: 598px;
+  border: transparent;
+  border-radius: 100px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: relative;
+  top: 710px;
+  left: -520px;
+}
+.sugar-text{
+  text-align: left;
+font: 800 40px 'Jost', sans-serif;
+position: relative;
+width: 232px;
+height: 254px;
+top: 30px;
+left: 45px;
+}
+.sugar-img{
+  width: 460px;
+height: 390px;
+position: relative;
+top: -40px;
+left: -20px;
+}
+.sugar-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.sugar-card:hover .sugar-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.sugar-card-front, .sugar-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.sugar-card-front {
+  border-radius: 20px;
+  background-color: #BF0606;
+  color: white;
+  box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10);
+}
+
+/* Style the back side */
+.sugar-card-back {
+  border-radius: 20px;
+  background-color: white;
+  color: #BF0606;
+  transform: rotateY(180deg);
+  box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10)
+}
+.sugar-text-inner{
+  text-align: center;
+  font: 600 20px 'Jost', sans-serif;
+  width: 220px;
+  position: relative;
+  top: 55px;
+  left: 70px;
+}
+
+/* guidance card */
+
+.guidance-card {
+background-color: transparent;
+width: 360px;
+height: 598px;
+border: transparent;
+border-radius: 100px;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+position: relative;
+top: 250px;
+left:  -100px;
+}
+.guidance-text{
+color: #BF0606;
+text-align: left;
+font: 800 40px 'Jost', sans-serif;
+position: relative;
+width: 232px;
+height: 254px;
+top: 35px;
+left: 45px;
+}
+.guidance-img{
+width: 300px;
+height: 395px;
+position: relative;
+top: -65px;
+left: 40px;
+}
+.guidance-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.guidance-card:hover .guidance-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.guidance-card-front, .guidance-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.guidance-card-front {
+border-radius: 20px;
+background-color: white;
+box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10);
+}
+
+/* Style the back side */
+.guidance-card-back {
+border-radius: 20px;
+background-color: #BF0606;
+color: white;
+transform: rotateY(180deg);
+box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10)
+}
+.guidance-text-inner{
+text-align: center;
+font: 600 20px 'Jost', sans-serif;
+width: 220px;
+position: relative;
+top: 65px;
+left: 70px;
+}
+
+/* knowledge card */
+
+.knowledge-card {
+background-color: transparent;
+width: 360px;
+height: 598px;
+border: transparent;
+border-radius: 100px;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+position: relative;
+top: -486px;
+left: 320px;
+}
+.knowledge-text{
+text-align: left;
+font: 800 40px 'Jost', sans-serif;
+position: relative;
+width: 232px;
+height: 254px;
+top: 30px;
+left: 45px;
+}
+.knowledge-img{
+width: 400px;
+height: 560px;
+position: relative;
+top: -180px;
+left: 90px;
+}
+.knowledge-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.knowledge-card:hover .knowledge-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.knowledge-card-front, .knowledge-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.knowledge-card-front {
+border-radius: 20px;
+background-color: #BF0606;
+color: white;
+box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10);
+}
+
+/* Style the back side */
+.knowledge-card-back {
+border-radius: 20px;
+background-color: white;
+color: #BF0606;
+transform: rotateY(180deg);
+box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10)
+}
+.knowledge-text-inner{
+text-align: center;
+font: 600 20px 'Jost', sans-serif;
+width: 220px;
+position: relative;
+top: 45px;
+left: 70px;
+}
+.features{
+  position: absolute;
+  left: 670px;
+  top: 15px;
+  width: 180px;
+  height: 26px;
+}
+.about-rec, .about-rec * {
+     box-sizing: border-box;
+     }
+.about-rec {
+     width: 100%;
+     height: 812px;
+     position: absolute;
+     top: 1580px;
+    }
+.about-text{
+text-align: left;
+position: absolute;
+width: 737px;
+height: 588px;
+font-size: 50px;
+font-weight: 600;
+top: 140px;
+left: 140px;
+}
+.about-innertext{
+  text-align: left;
+  position: absolute;
+  font: 0 20px 'Jost', sans-serif;
+  top: 300px;
+  left: 140px;
+  line-height: 30px;
+}
+.cta{
+  text-align: left;
+  position: absolute;
+  font: 500 28px 'Jost', sans-serif;
+  top:550px;
+  left: 140px;
+}
+.waitlist{
+  background-color: white;
+    text-align: center;
+    font: 600 18px 'Jost', sans-serif;
+    left: 138px;
+    top: 670px;
+    border-radius: 10px;
+    width: 250px;
+    height: 62px;
+  position: absolute;
+}
+.waitlist:hover {
+background-color:transparent;
+border-radius: 10px;
+border-style: solid;
+border-color:rgba(255, 255, 255, 0.20);
+border-width: 3px;
+}
+.about-img{
+  width: 497px;
+height: 900px;
+position: relative;
+top: -90px;
+left: 900px;
+}
+.waitlist a{
+  color: #BF0606;
+}
+.waitlist:hover a{
+  color: white;
+}
+.contact-text{
+  position: absolute;
+  top: 2570px;
+  text-align: left;
+font: 700 40px/40px 'Jost', sans-serif;
+left: 135px;
+}
+.contact-innertext{
+  position: absolute;
+  top: 2630px;
+  left: 140px;
+  font: 400 30px/40px 'Jost', sans-serif;
+}
+.contact-img{
+  width: 350px;
+height: 600px;
+position: relative;
+top: 2580px;
+left: 160px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px;
+  border: transparent;/* Some padding */
+  background: rgba(191, 6, 6, 0.15);
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+}
+label{
+  color: #BF0606;
+  font-weight: 600;
+  font-style: 'Jost', sans-serif;
+}
+input[type=submit] {
+  background-color: #BF0606;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  position: absolute;
+  left: 170px;
+  top: 540px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: green;
+}
+
+/* Add a background color and some padding around the form */
+.container1 {
+  position: absolute;
+  top: 2590px;
+  background-color: white;
+  padding: 20px;
+  width: 500px;
+  height: 620px;
+  left: 850px;
+  border-radius: 30px;
+  box-shadow: 20px 20px 30px 5px rgba(191, 6, 6, 0.10);
+}
+.footer-rec, .footer-rec * {
+     box-sizing: border-box;
+     }
+.footer-rec {
+    position: relative;
+     overflow: visible;
+     width: 100%;
+     height: 500px;
+     top: 2700px;
+    }
+    .footer-img{
+      width: 40px;
+      margin-right: 4px;
+      border-radius: 40px;
+      position: absolute;
+      left: 450px;
+      top: 100px;
+    }
+    .logo-txt{
+      color: white;
+      position: absolute;
+      top: 103px;
+      left: 500px;
+      font-size: 25px;
+      font-weight: 600;
+      font-style: 'Jost', sans-serif;
+    }
+    .foot-txt{
+      color: white;
+      position: absolute;
+      top: 160px;
+      left: 460px;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: 'Jost', sans-serif;
+    }
+    .foot-txt1{
+      color: white;
+      position: absolute;
+      top: 260px;
+      left: 460px;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: 'Jost', sans-serif;
+    }
+    .footbu{
+      position: absolute;
+      top: 310px;
+      left: 450px;
+    }
+  .foot-img{
+    width: 300px;
+    height: 700px;
+    position: absolute;;
+    top: -200px;
+  }
+  .footimg1{
+    width: 300px;
+    height:400px;
+    position: absolute;
+    left: 1050px;
+    top: 50px;
+  }
+
+.foot-line {
+    background-color: white;
+    opacity: 0.5;
+     width: 75%;
+     height: 2px;
+     left: 240px;
+     position: absolute;
+     top: 450px;
+    }
+    .copy{
+      color: white;
+      position: absolute;
+      top: 15px;
+      left: 350px;
+      width: 80%;
+
+    }
